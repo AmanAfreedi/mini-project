@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Event Scheduler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Virtual Event Scheduler</h1>
+    <p>Create and share your event schedules with ease!</p>
+  </header>
+
+  <main>
+    <!-- Event Creation Form -->
+    <section id="event-form">
+      <h2>Create an Event</h2>
+      <form id="create-event">
+        <label for="event-name">Event Name:</label>
+        <input type="text" id="event-name" required>
+
+        <label for="event-date">Event Date:</label>
+        <input type="date" id="event-date" required>
+
+        <label for="event-time">Event Time:</label>
+        <input type="time" id="event-time" required>
+
+        <label for="event-description">Description:</label>
+        <textarea id="event-description" rows="4" required></textarea>
+
+        <button type="submit">Create Event</button>
+      </form>
+    </section>
+
+    <!-- Event Timeline Display -->
+    <section id="event-timeline">
+      <h2>Event Timeline</h2>
+      <div id="timeline"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Virtual Event Scheduler</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
